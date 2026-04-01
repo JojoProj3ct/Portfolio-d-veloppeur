@@ -5,7 +5,8 @@ function Navbar() {
     <header className="navbar">
       <div className="container navbar__container">
         <a href="#home" className="navbar__logo">
-          Jojo Project
+          <span className="navbar__logo-main">Joseph Project</span>
+          <span className="navbar__logo-badge">Freelance</span>
         </a>
 
         <nav className="navbar__nav" aria-label="Navigation principale">

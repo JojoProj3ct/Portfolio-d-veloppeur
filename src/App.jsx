@@ -11,8 +11,13 @@ import "./styles/_global.scss";
 function App() {
   return (
     <>
+      <a href="#main-content" className="skip-link">
+        Aller au contenu principal
+      </a>
+
       <Navbar />
-      <main>
+
+      <main id="main-content">
         <Hero />
         <About />
         <Services />
@@ -20,6 +25,7 @@ function App() {
         <Projects />
         <Contact />
       </main>
+
       <Footer />
     </>
   );

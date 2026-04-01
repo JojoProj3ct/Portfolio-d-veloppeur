@@ -17,7 +17,7 @@ function Contact() {
             <li>
               <span>Email</span>
               <a href="mailto:ton-adresse-mail@example.com">
-                ton-adresse-mail@example.com
+                Me contacter par email
               </a>
             </li>
             <li>
@@ -27,7 +27,7 @@ function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                github.com/JojoProj3ct
+                Voir mes projets sur GitHub
               </a>
             </li>
             <li>
@@ -37,7 +37,7 @@ function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                linkedin.com/in/ton-profil
+                Découvrir mon profil LinkedIn
               </a>
             </li>
           </ul>
