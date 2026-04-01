@@ -33,7 +33,7 @@ function Contact() {
             <li>
               <span>LinkedIn</span>
               <a
-                href="https://www.linkedin.com/in/ton-profil/"
+                href="https://www.linkedin.com/in/joseph-fernandez-93035025b/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

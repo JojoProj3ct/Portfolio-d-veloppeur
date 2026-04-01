@@ -5,7 +5,7 @@ function Navbar() {
     <header className="navbar">
       <div className="container navbar__container">
         <a href="#home" className="navbar__logo">
-          <span className="navbar__logo-main">Joseph Project</span>
+          <span className="navbar__logo-main">JoJo Project</span>
           <span className="navbar__logo-badge">Freelance</span>
         </a>
 

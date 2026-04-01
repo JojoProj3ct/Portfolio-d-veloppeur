@@ -15,7 +15,7 @@ export const projects = [
     ],
     description:
       "Application de location immobilière développée en React avec navigation multipage, composants réutilisables et interface responsive.",
-    github: "",
+    github: "https://github.com/JojoProj3ct/kasa",
     demo: "",
     image: kasaImage,
     alt: "Capture du projet Kasa",
@@ -32,7 +32,7 @@ export const projects = [
     ],
     description:
       "Site vitrine dynamique connecté à une API, avec interface d’administration, authentification et gestion de contenus.",
-    github: "",
+    github: "https://github.com/JojoProj3ct/Projet6-sophie-bluel",
     demo: "",
     image: sophieImage,
     alt: "Capture du projet Sophie Bluel",
@@ -49,7 +49,7 @@ export const projects = [
     ],
     description:
       "Débogage et fiabilisation d’un site one-page existant avec analyse des anomalies et rédaction d’un cahier de recette.",
-    github: "",
+    github: "https://github.com/JojoProj3ct/Debuggez-une-appli-projet-9",
     demo: "",
     image: agenceImage,
     alt: "Capture du projet Agence événementielle",
@@ -66,7 +66,7 @@ export const projects = [
     ],
     description:
       "Front-end bancaire développé avec React et Redux, connecté à une API pour afficher les données utilisateur dans un tableau de bord.",
-    github: "",
+    github: "https://github.com/JojoProj3ct/Argentbank-front-end",
     demo: "",
     image: bankImage,
     alt: "Capture du projet Application bancaire",
