@@ -3,7 +3,7 @@ import "./Footer.scss";
 function Footer() {
   return (
     <footer>
-      <p>© 2026 Prénom Nom</p>
+      <p>© 2026 Jojo Project - Portfolio développeur</p>
     </footer>
   );
 }

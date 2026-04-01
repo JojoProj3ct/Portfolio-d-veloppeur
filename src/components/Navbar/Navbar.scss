@@ -1,0 +1,60 @@
+@import "../../styles/variables";
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid $color-border;
+}
+
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+  gap: $spacing-md;
+}
+
+.navbar__logo {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: $color-text;
+}
+
+.navbar__nav {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+  flex-wrap: wrap;
+}
+
+.navbar__nav a {
+  color: $color-text-muted;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar__nav a:hover,
+.navbar__nav a:focus {
+  color: $color-primary;
+}
+
+@media (max-width: 768px) {
+  .navbar__container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 12px 0;
+  }
+
+  .navbar__nav {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .navbar__nav a {
+    font-size: 0.95rem;
+  }
+}

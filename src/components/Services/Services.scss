@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+
+.services__eyebrow {
+  margin: 0 0 $spacing-sm;
+  color: $color-primary;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: $spacing-md;
+}
+
+.services__card h3 {
+  margin-top: 0;
+  margin-bottom: $spacing-sm;
+  font-size: 1.1rem;
+}
+
+.services__card p {
+  margin: 0;
+  color: $color-text-muted;
+}
+
+@media (max-width: 768px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+}

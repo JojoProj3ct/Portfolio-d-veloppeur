@@ -1,0 +1,70 @@
+@import "../../styles/variables";
+
+.projects__eyebrow {
+  margin: 0 0 $spacing-sm;
+  color: $color-primary;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: $spacing-md;
+}
+
+.projects__card {
+  height: 100%;
+}
+
+.projects__content {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+  height: 100%;
+}
+
+.projects__content h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.projects__description {
+  margin: 0;
+  color: $color-text-muted;
+}
+
+.projects__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.projects__stack li {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid $color-border;
+  color: $color-text-muted;
+  font-size: 0.9rem;
+}
+
+.projects__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+  margin-top: auto;
+}
+
+@media (max-width: 900px) {
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects__links {
+    flex-direction: column;
+  }
+}

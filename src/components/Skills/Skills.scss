@@ -1,0 +1,42 @@
+@import "../../styles/variables";
+
+.skills__eyebrow {
+  margin: 0 0 $spacing-sm;
+  color: $color-primary;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: $spacing-md;
+}
+
+.skills__card h3 {
+  margin-top: 0;
+  margin-bottom: $spacing-md;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills__list li {
+  padding: 8px 12px;
+  border: 1px solid $color-border;
+  border-radius: 999px;
+  color: $color-text-muted;
+  background: rgba(255, 255, 255, 0.02);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+}

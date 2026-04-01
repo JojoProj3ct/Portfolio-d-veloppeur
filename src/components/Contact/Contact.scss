@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+.contact__card {
+  display: grid;
+  gap: $spacing-md;
+}
+
+.contact__eyebrow {
+  margin: 0;
+  color: $color-primary;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+}
+
+.contact__text {
+  margin: 0;
+  color: $color-text-muted;
+  max-width: 700px;
+}
+
+.contact__list {
+  display: grid;
+  gap: $spacing-sm;
+}
+
+.contact__list li {
+  display: grid;
+  gap: 6px;
+  padding-top: $spacing-sm;
+  border-top: 1px solid $color-border;
+}
+
+.contact__list span {
+  color: $color-text-muted;
+  font-size: 0.95rem;
+}
+
+.contact__list a {
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.contact__list a:hover,
+.contact__list a:focus {
+  color: $color-primary;
+}
