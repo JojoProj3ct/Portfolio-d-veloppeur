@@ -16,9 +16,7 @@ function Contact() {
           <ul className="contact__list">
             <li>
               <span>Email</span>
-              <a href="mailto:ton-adresse-mail@example.com">
-                Me contacter par email
-              </a>
+              <a href="gitjojo@outlook.fr">Me contacter par email</a>
             </li>
             <li>
               <span>GitHub</span>

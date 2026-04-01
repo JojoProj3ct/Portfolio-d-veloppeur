@@ -1,0 +1,62 @@
+@import "../../styles/variables";
+
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.12), transparent 35%),
+    linear-gradient(180deg, #020617 0%, #0f172a 100%);
+}
+
+.loading-screen__content {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.loading-screen__ring {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  border: 3px solid rgba(148, 163, 184, 0.18);
+  border-top-color: $color-primary;
+  box-shadow:
+    0 0 20px rgba(56, 189, 248, 0.2),
+    inset 0 0 20px rgba(56, 189, 248, 0.08);
+  animation: spin 1s linear infinite;
+}
+
+.loading-screen__label {
+  margin: 0;
+  color: $color-primary;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.loading-screen__title {
+  margin: 0;
+  color: $color-text;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.loading-screen__subtitle {
+  margin: 0;
+  color: $color-text-muted;
+  font-size: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
