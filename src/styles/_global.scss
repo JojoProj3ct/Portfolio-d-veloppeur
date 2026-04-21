@@ -1,5 +1,9 @@
 @import "./variables";
 
+/* =========================
+   BASE GLOBALE DU SITE
+   ========================= */
+
 * {
   box-sizing: border-box;
 }
@@ -8,6 +12,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* =========================
+   FOND GLOBAL DU SITE
+   - fond sombre
+   - ambiance espace / univers
+   ========================= */
 body {
   margin: 0;
   font-family: $font-base;
@@ -57,6 +66,9 @@ select {
   font: inherit;
 }
 
+/* =========================
+   STRUCTURE GLOBALE
+   ========================= */
 section {
   padding: 80px 20px;
 }
@@ -77,6 +89,9 @@ main {
   margin: 0 0 24px;
 }
 
+/* =========================
+   ÉLÉMENTS RÉUTILISABLES
+   ========================= */
 .card {
   background: rgba(31, 41, 55, 0.82);
   border: 1px solid rgba(148, 163, 184, 0.18);
@@ -115,6 +130,9 @@ main {
   color: $color-primary;
 }
 
+/* =========================
+   ACCESSIBILITÉ
+   ========================= */
 :focus-visible {
   outline: 3px solid $color-primary;
   outline-offset: 3px;
@@ -136,6 +154,9 @@ main {
   top: 16px;
 }
 
+/* =========================
+   CALQUES VISUELS GLOBAUX
+   ========================= */
 body::before,
 body::after {
   content: "";
@@ -144,6 +165,10 @@ body::after {
   pointer-events: none;
 }
 
+/* =========================
+   ÉTOILES EN FOND
+   - petits points lumineux animés
+   ========================= */
 body::before {
   z-index: 0;
   background-image:
@@ -162,6 +187,10 @@ body::before {
   animation: starsDrift 24s linear infinite;
 }
 
+/* =========================
+   HALOS / LUMIÈRES FLOUES
+   - profondeur visuelle
+   ========================= */
 body::after {
   z-index: 0;
   background:
@@ -185,6 +214,9 @@ body::after {
   animation: glowFloat 14s ease-in-out infinite alternate;
 }
 
+/* =========================
+   LE CONTENU PASSE AU-DESSUS DU FOND
+   ========================= */
 header,
 main,
 footer,
@@ -193,6 +225,9 @@ section {
   z-index: 1;
 }
 
+/* =========================
+   ÉTOILE FILANTE 1
+   ========================= */
 header::before {
   content: "";
   position: fixed;
@@ -216,6 +251,9 @@ header::before {
   z-index: 0;
 }
 
+/* =========================
+   ÉTOILE FILANTE 2
+   ========================= */
 main::before {
   content: "";
   position: fixed;
@@ -239,6 +277,11 @@ main::before {
   z-index: 0;
 }
 
+/* =========================
+   ANIMATIONS
+   ========================= */
+
+/* mouvement lent des étoiles */
 @keyframes starsDrift {
   from {
     transform: translate3d(0, 0, 0);
@@ -248,6 +291,7 @@ main::before {
   }
 }
 
+/* mouvement doux des halos lumineux */
 @keyframes glowFloat {
   from {
     transform: translate3d(0, 0, 0) scale(1);
@@ -257,6 +301,7 @@ main::before {
   }
 }
 
+/* animation étoile filante 1 */
 @keyframes shootingStarOne {
   0%,
   70%,
@@ -277,6 +322,7 @@ main::before {
   }
 }
 
+/* animation étoile filante 2 */
 @keyframes shootingStarTwo {
   0%,
   76%,
@@ -297,6 +343,9 @@ main::before {
   }
 }
 
+/* =========================
+   RESPONSIVE
+   ========================= */
 @media (max-width: 768px) {
   section {
     padding: 64px 16px;
@@ -314,6 +363,8 @@ main::before {
     width: 100%;
   }
 
+  /* on masque les étoiles filantes sur mobile
+     pour éviter de surcharger l'affichage */
   header::before,
   main::before {
     display: none;
