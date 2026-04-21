@@ -1,7 +1,7 @@
-import kasaImage from "../assets/images/kasa.jpg";
-import sophieImage from "../assets/images/sophie-bluel.jpg";
-import agenceImage from "../assets/images/agence-evenementielle.jpg";
-import bankImage from "../assets/images/application-bancaire.jpg";
+import kasaImage from "../assets/images/kasa.webp";
+import sophieImage from "../assets/images/sophie-bluel.webp";
+import agenceImage from "../assets/images/agence-evenementielle.webp";
+import bankImage from "../assets/images/application-bancaire.webp";
 
 export const projects = [
   {
